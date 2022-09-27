@@ -1,0 +1,41 @@
+iigned int num = 0; 
+
+18 
+
+ 
+
+19 	do { 
+
+20 		if (*s == '-') 
+
+21 			sign *= -1; 
+
+22 
+
+ 
+
+23 		else if (*s >= '0' && *s <= '9') 
+
+24 			num = (num * 10) + (*s - '0'); 
+
+25 
+
+ 
+
+26 		else if (num > 0) 
+
+27 			break; 
+
+28 
+
+ 
+
+29 	} while (*s++); 
+
+30 
+
+ 
+
+31 	return (num * sign); 
+
+
